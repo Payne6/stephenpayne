@@ -10,16 +10,21 @@
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			flex-wrap: wrap;
+			flex-wrap: nowrap;
 			margin-right: 20px;
 		}
+		.picture_box {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+		}
 		.portrait {
-			max-width: 15%;
+			max-width: 80%;
 			height: auto;
 			margin-right: 5px;
 		}
 		.landscape {
-			max-width: 20%;
+			max-width: 90%;
 			height: auto;
 			margin-right: 5px;
 		}
@@ -40,11 +45,11 @@
 	<div id=paintings">
 		<h1>Exhibitions</h1>
 		<div id="thumbnails">
-			<img class="portrait" src="test/sleeps/sleeps1.jpg">
-			<img class="landscape" src="test/chess/chess2.jpg">
-			<img class="portrait" src="test/paynes/paynes2.jpg">
-			<img class="landscape" src="test/drawings/drawings4.jpg">
-			<img class="landscape" src="test/DIY/DIY2.jpg">
+			<a class="picture_box" href="website_paintings_sleeps.html"><img class="portrait" src="test/sleeps/sleeps1.jpg"></a>
+			<a class="picture_box" href="website_paintings_chess.html"><img class="landscape" src="test/chess/chess2.jpg"></a>
+			<a class="picture_box" href="website_paintings_paynes.html"><img class="portrait" src="test/paynes/paynes2.jpg"></a>
+			<a class="picture_box" href="website_paintings_drawings.html"><img class="landscape" src="test/drawings/drawings4.jpg"></a>
+			<a class="picture_box" href="website_paintings_DIY"><img class="landscape" src="test/DIY/DIY2.jpg"></a>
 		</div>
 	</div>
 </body>
