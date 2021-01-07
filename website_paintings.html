@@ -1,57 +1,46 @@
 <!DOCTYPE html>
-<html>
 <head>
 	<meta charset="UTF-8">
 	<title>Paintings</title>
-	
 	<style>
-		
-		#thumbnails {
+		#thumb_box {
 			display: flex;
 			flex-direction: row;
 			justify-content: space-between;
-			flex-wrap: nowrap;
-			margin-right: 20px;
 		}
-		.picture_box {
-			display: flex;
-			flex-direction: row;
-			justify-content: center;
-		}
+
+
 		.portrait {
-			max-width: 80%;
+			display: flex;
+			width: 90%;
 			height: auto;
-			margin-right: 5px;
-		}
-		.landscape {
-			max-width: 90%;
+		}	
+		.horizon {
+			display: flex;
+			width: 90%;
 			height: auto;
-			margin-right: 5px;
-		}
+			}
 	</style>
+
 </head>
+
 <body>
-	<div>
+
 	<div id="header">
-		<h1><a href="website_main_page.html">STEPHEN PAYNE</a></h1>
+		<a href="website_main_page.html"><h1>STEPHEN PAYNE</h1></a>
 	</div>
 	<div id="menu">
-		<a>Paintings</a>
+		<a href="website_paintings.html">Paintings</a>
 		<a href="website_about.html">About</a>
 		<a href="website_contact.html">Contact</a>
 		<a href="website_CV.html">CV</a>
 	</div>
 
-	<div id=paintings">
-		<h1>Exhibitions</h1>
-		<div id="thumbnails">
-			<a class="picture_box" href="website_paintings_sleeps.html"><img class="portrait" src="test/sleeps/sleeps1.jpg"></a>
-			<a class="picture_box" href="website_paintings_chess.html"><img class="landscape" src="test/chess/chess2.jpg"></a>
-			<a class="picture_box" href="website_paintings_paynes.html"><img class="portrait" src="test/paynes/paynes2.jpg"></a>
-			<a class="picture_box" href="website_paintings_drawings.html"><img class="landscape" src="test/drawings/drawings4.jpg"></a>
-			<a class="picture_box" href="website_paintings_DIY"><img class="landscape" src="test/DIY/DIY2.jpg"></a>
-		</div>
+	<div id="thumb_box">
+		<a href="website_paintings_drawings.html"><img class="horizon" src="test/drawings/drawings1.jpg"></a>
+		<a href="website_paintings_chess.html"><img class="horizon" src="test/chess/chess1.jpg"></a>
+		<a href="website_paintings_paynes.html"><img class="portrait" src="test/paynes/paynes2.jpg"></a>
+		<a href="website_paintings_DIY.html"><img class="horizon" src="test/DIY/DIY1.jpg"></a>
+		<a href="website_paintings_sleeps.html"><img class="portrait" src="test/sleeps/sleeps1.jpg"></a>
 	</div>
 </body>
-</html>
-
