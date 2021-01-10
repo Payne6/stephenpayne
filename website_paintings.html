@@ -1,46 +1,51 @@
 <!DOCTYPE html>
+<html>
 <head>
 	<meta charset="UTF-8">
-	<title>Paintings</title>
+	<title>STEPHEN PAYNE</title>
+
 	<style>
+		#menu {
+			margin-bottom: 10px;
+		}
+
 		#thumb_box {
 			display: flex;
 			flex-direction: row;
-			justify-content: space-between;
+			justify-content: flex-start;
+			flex-wrap: wrap;
 		}
-
-
-		.portrait {
+		
+		.pic_link {
 			display: flex;
-			width: 90%;
-			height: auto;
-		}	
-		.horizon {
+			flex-direction: row;
+			justify-content: space-around;
+			margin-right: 10px;			
+		}
+		
+		.jpeg {
 			display: flex;
-			width: 90%;
-			height: auto;
-			}
+			max-height: 200px;
+		}
 	</style>
 
 </head>
-
+	
 <body>
-
 	<div id="header">
-		<h1><a href="index.html">STEPHEN PAYNE</a></h1>
+		<a href="index.html"><h1>STEPHEN PAYNE</h1></a>
 	</div>
 	<div id="menu">
-		<a href="website_paintings.html">Paintings</a>
+		<a>Paintings</a>
 		<a href="website_about.html">About</a>
 		<a href="website_contact.html">Contact</a>
 		<a href="website_CV.html">CV</a>
 	</div>
-
-	<div id="thumb_box">
-		<a href="website_paintings_drawings.html"><img class="horizon" src="test/drawings/drawings1.jpg"></a>
-		<a href="website_paintings_chess.html"><img class="horizon" src="test/chess/chess1.jpg"></a>
-		<a href="website_paintings_paynes.html"><img class="portrait" src="test/paynes/paynes2.jpg"></a>
-		<a href="website_paintings_DIY.html"><img class="horizon" src="test/DIY/DIY1.jpg"></a>
-		<a href="website_paintings_sleeps.html"><img class="portrait" src="test/sleeps/sleeps1.jpg"></a>
-	</div>
-</body>
+		
+		<div id="thumb_box">
+			<a class="pic_link" href="website_paintings_drawings.html"><img class="jpeg" src="paintings_photos/landscapes/landscapes1.jpeg"></a>
+			<a class="pic_link" href="website_paintings_chess.html"><img class="jpeg" src="paintings_photos/fried_chicken/fried_chicken1.jpg"></a>
+			<a class="pic_link" href="website_paintings_paynes.html"><img class="jpeg" src="paintings_photos/lots_wife/lots_wife1.jpeg"></a>
+			<a class="pic_link" href="website_paintings_DIY.html"><img class="jpeg" src="paintings_photos/small_narrative/small_narrative1.jpeg"></a>
+		
+		</div>
