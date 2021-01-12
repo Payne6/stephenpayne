@@ -5,62 +5,81 @@
 	<title>STEPHEN PAYNE</title>
 
 	<style>
-
-		#menu {
-			margin-bottom: 10px;
-		}
-		#container {
-			display: flex;
-			flex-direction: row;
-			justify-content: flex-start;
-		}	
-		#main_image {
-			display: flex;
-			flex-direction: row;
-			justify-content: left; 
-			margin-right: 10px;
-			width: 40%;
-			height: auto;
-			background-color: blue;
-		}
-		#main_text{
+		#top {
 			display: flex;
 			flex-direction: column;
-			width: 30%;
-			justify-content: left;
-			margin-left: 5px;
-
+			align-items: center;
 		}
-		img {
-			width: 100%;
+
+		#header {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			width: 60%;
+			margin-top: -30px;
+			margin-bottom: -50px;
+		}
+		
+		#header_name {	
+			padding: 10px;
+			font-size: 70px;	
+		}
+
+		#menu {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			width: 45%;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+		#main_image_container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 20px;
+		}
+
+		#main_image {
+			width: 50%;
 			height: auto;
 		}
-		
-		
+
+		a:link {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+
+		a:visited {
+			text-decoration: none;
+			color: black;
+			font-weight: bold;
+		}
+
+		a:hover {
+			color: #F08C52;
+		}
 	</style>
 </head>
 	
 <body>
-	<div id="header">
-		<h1>STEPHEN PAYNE</h1>
-	</div>
-	<div id="menu">
-		<a href="website_paintings.html">Paintings</a>
-		<a href="website_about.html">About</a>
-		<a href="website_contact.html">Contact</a>
-		<a href="website_CV.html">CV</a>
-	</div>
-	<div id="container">
-		<div id="main_image">
-			<img src="paintings_photos/front/studio.jpeg">
+	<div id="top">
+		<div id="header">
+			<h1 id="header_name">STEPHEN PAYNE</h1>
 		</div>
+		<div id="menu">
+			<a class="menu_link" href="website_paintings.html">PAINTINGS</a>
+			<a href="website_about.html">ABOUT</a>
+			<a href="website_contact.html">CONTACT</a>
+			<a href="website_CV.html">CURRICULUM VITAE</a>
+		</div>
+	</div>
 
-		<div id="main_text">
-			<p>Stephen is an artist who lives in Kenilworth with his wife Antonia and the ghosts of their three dead cats. He has two sons, Tom and Aaron and is regularly telephoned by both.</p> 
-			<p>His paintings often display a fascination with mundane objects such as clocks and laptops. Occasionally he finds more esoteric subjects, such as biblical scenes or family life. His paintings have recently featured a lot of gold paint. They have also shrunk in size, probably because of the price of gold paint.</p>
-			<p>When he isn't painting, Stephen goes for long walks in the countryside and does DIY.</p>
-		</div>
-		</div>
+	<div id="main_image_container">
+			<img id="main_image" src="paintings_photos/fried_chicken/fried_chicken8.jpg">
+	</div>
 </body>
 </html>
 
