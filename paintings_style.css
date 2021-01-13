@@ -90,3 +90,7 @@ a:hover {
 	display: flex;
 	max-height: 200px;
 }
+
+#image_box {
+	margin-top: 15px;
+}
