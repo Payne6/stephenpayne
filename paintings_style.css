@@ -107,4 +107,33 @@ a:hover {
 	flex-direction: column;
 	width: 80%;
 	align-items: flex-start;
+	font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.cv_header {
+	margin-top: 40px;
+}
+
+.entry {
+	display: flex;
+	flex-direction: row;
+	align-items: space-around;
+	margin-bottom: 10px;
+
+}
+
+.entry:hover {
+	color: #F08C52;
+}
+
+.cv_date {
+	font-weight: bold;
+	width: 70px;	
+}
+
+.cv_content_box {
+	display: flex; 
+	flex-direction: column;
+	margin-left: 20px;
 }
