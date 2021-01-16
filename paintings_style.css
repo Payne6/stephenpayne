@@ -137,3 +137,26 @@ a:hover {
 	flex-direction: column;
 	margin-left: 20px;
 }
+
+.contacts_body {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+	font-family: 'Alegreya Sans', sans-serif;
+}
+
+.details {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	width: 50%;
+}
+
+.left_contact {
+	font-weight: bold;
+}
+
+.right_contact {
+	margin-left: 20px;
+}
