@@ -4,7 +4,8 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>WORK</title>
-		<link rel="stylesheet" href="paintings_style.css">	
+		<link rel="stylesheet" href="paintings_style.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	</head>
 
 	<body>
@@ -29,12 +30,23 @@
 			<a class="cat" id="salt">Pillar of Salt</a>
 			<a class="cat" id="small">Small Narrative Paintings</a>
 			<a class="cat" id="land">Landscapes</a>
+			<div id="chevrons">
+				<div id="back">
+					<i class="material-icons" id="prev" onclick="minus()">arrow_back</i>
+					<p>Prev</p>
+				</div>
+				<div id="count">1/77</div>
+				<div id="forward">
+					<i class="material-icons" id="next" onclick="plus()">arrow_forward</i>
+					<p>Next</p>
+				</div>
+			</div>
 			<div id="buttons">
-				<button id="prev" onclick="minus()">Previous</button>
-				<button id="next" onclick="plus()">Next</button>
 			</div>
 		</div>
+
 		<div id="carousel_images">
+
 			<img class="pic" src="paintings_photos/rochdale/rochdale1.jpg">	
 			<img class="pic" src="paintings_photos/rochdale/rochdale2.jpg">	
 			<img class="pic" src="paintings_photos/rochdale/rochdale3.jpg">	
@@ -117,6 +129,14 @@
 			<img class="pic" src="paintings_photos/landscapes/landscapes17.jpg">
 			<img class="pic" src="paintings_photos/landscapes/landscapes18.jpg">
 			<img class="pic" src="paintings_photos/landscapes/landscapes19.jpg">
+		
+		</div>
+
+		<div id="pic_info_box">
+			<p id="pic_title">Title here</p>
+			<p id="pic_material">Paint on canvas<p>
+			<p id="pic_size">40 x 50 inches</p>
+			<p id="pic_date">2012</p> 
 		</div>
 	</div>
 	</div>
@@ -148,13 +168,22 @@
 
 		showPic(slideIndex);
 
+		const counter = document.getElementById("count");
+		var quantity = document.getElementsByClassName("pic").length;
+
+		function newCount(){
+			count.innerHTML = slideIndex + "/" + quantity;
+		}
+
 //moves you up one when directional arrows are clicked
 		function plus(){	
 			showPic(slideIndex += 1);
+			newCount();
 		};
 
 		function minus(){
 			showPic(slideIndex -= 1);
+			newCount();
 		};
 
 
@@ -164,36 +193,42 @@
 		rochdale.addEventListener("click", function(){
 			slideIndex = 1;
 			showPic(slideIndex);
+			newCount();
 		});
 
 		const friedChicken = document.getElementById("fried");
 		friedChicken.addEventListener("click", function(){
 			slideIndex = 17;
 			showPic(slideIndex);
+			newCount();
 		});
 
 		const largeOil = document.getElementById("large");
 		largeOil.addEventListener("click", function(){
 			slideIndex = 26;
 			showPic(slideIndex);
+			newCount();
 		});
 
 		const pillarOfSalt = document.getElementById("salt");
 		pillarOfSalt.addEventListener("click", function(){
 			slideIndex = 37;
 			showPic(slideIndex);
+			newCount();
 		});
 
 		const smallNarrative = document.getElementById("small");
 		smallNarrative.addEventListener("click", function(){
 			slideIndex = 44;
 			showPic(slideIndex);
+			newCount();
 		});
 
 		const landscape = document.getElementById("land");
 		landscape.addEventListener("click", function(){
 			slideIndex = 59;
 			showPic(slideIndex);
+			newCount();
 		});
 
 
