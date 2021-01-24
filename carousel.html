@@ -162,9 +162,10 @@
 			images[slideIndex - 1].style.display = "block";
 			images[slideIndex - 1].style.width = "350px";
 			images[slideIndex -1].style.height = "auto";
+			
 
 		}
-
+		
 
 		showPic(slideIndex);
 
@@ -173,9 +174,11 @@
 
 		function newCount(){
 			count.innerHTML = slideIndex + "/" + quantity;
-		}
+		};
 
-//moves you up one when directional arrows are clicked
+
+
+//move you back or forth  when directional arrows are clicked
 		function plus(){	
 			showPic(slideIndex += 1);
 			newCount();

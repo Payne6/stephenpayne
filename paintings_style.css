@@ -207,6 +207,7 @@ a:hover {
 	display: flex;
 	flex-direction: row;
 	align-items: flex-start;
+	margin-right: 30px;
 }
 
 #info {
