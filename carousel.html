@@ -32,12 +32,12 @@
 			<a class="cat" id="land">Landscapes</a>
 			<div id="chevrons">
 				<div id="back">
-					<i class="material-icons" id="prev" onclick="minus()">arrow_back</i>
+					<i class="material-icons" id="prev" onclick="minus()" onclick="combineBoth()">arrow_back</i>
 					<p>Prev</p>
 				</div>
 				<div id="count">1/77</div>
 				<div id="forward">
-					<i class="material-icons" id="next" onclick="plus()">arrow_forward</i>
+					<i class="material-icons" id="next" onclick="plus()" onclick="combineBoth()">arrow_forward</i>
 					<p>Next</p>
 				</div>
 			</div>
@@ -174,11 +174,13 @@
 
 		function newCount(){
 			count.innerHTML = slideIndex + "/" + quantity;
+			combineBoth();
 		};
 
 
 
 //move you back or forth  when directional arrows are clicked
+
 		function plus(){	
 			showPic(slideIndex += 1);
 			newCount();
@@ -188,6 +190,7 @@
 			showPic(slideIndex -= 1);
 			newCount();
 		};
+
 
 
 //move you to first image of clicked category
@@ -233,6 +236,44 @@
 			showPic(slideIndex);
 			newCount();
 		});
+
+
+//highlights correct category
+
+var items = [
+    {name: rochdale, 
+    index: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]}, 
+    {name: friedChicken, 
+    index: [17, 18, 19, 20, 21, 22, 23, 24, 25]}, 
+    {name: largeOil,
+    index: [26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36]}, 
+    {name: pillarOfSalt, 
+    index: [37, 38, 39, 40, 41, 42, 43]}, 
+    {name: smallNarrative, 
+    index: [44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58]}, 
+    {name: landscape, 
+    index: [59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77]}
+];
+
+
+function allBlack(){
+    for (var t = 0; t < items.length; t++){
+        items[t].name.style.color = "black";
+    }
+};
+
+function highlight(){
+    for (var j = 0; j < items.length; j++){
+        if (items[j].index.includes(slideIndex)){
+            items[j].name.style.color = "#F08C52";  
+        }
+    }
+};
+
+function combineBoth(){
+	allBlack();
+	highlight();
+};
 
 
 	</script>
