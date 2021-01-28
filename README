@@ -28,4 +28,16 @@ Some considerations: is the website colourful enough? I think its simplicity pla
 
 *****
 
-I have added Steve's email and a copyright disclaimer to the contact page, and have also added more images to the small narrative and landscape pages. These alterations have not for some reason appeared on github yet, so hopefully another git push will fix this.  
+I have added Steve's email and a copyright disclaimer to the contact page, and have also added more images to the small narrative and landscape pages. These alterations have not for some reason appeared on github yet, so hopefully another git push will fix this.
+
+*****
+
+On the carousel branch, I have now created an image carousel for the works page. This allows you to flip through the images that were previously spread across the individual exhibition pages. The categories are listed on the left. Javascript allows you to jump straight to the first image in a category by clicking the relevant category name; further js lights up the category corresponding to the picture you're viewing. 
+
+Stephen has seen the changes an approves. He has now sent over a new batch of images to replace the ones currently in use. He has also included the information pertinent to each picture. Along with these he has sent a new CV and a piece of writing for the About section. 
+
+The remaining tasks are now as follows: 1) to get the About section sorted out; 2) to update the CV page; 3) to create a new folder for the images and put the imaages inside it; 4) to ensure that the js already at works applies to the new images as it did to the previous images; 5) to concoct further js to put the correct info next to the correct picture. This last is probably the trickiest remaining job. Probably the best way to do it is to store the pictures and info as an array of objects and every time you move backwards or forwards through the carousel to iterate through the array and select the details pertaining the current slideIndex. This already happens with lighting up the categories, so probably the same array can be beefed up for this purpose. 
+
+*****
+
+

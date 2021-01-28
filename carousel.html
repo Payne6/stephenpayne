@@ -169,11 +169,14 @@
 
 		showPic(slideIndex);
 
+
+//displays how far through carousel
+
 		const counter = document.getElementById("count");
 		var quantity = document.getElementsByClassName("pic").length;
 
 		function newCount(){
-			count.innerHTML = slideIndex + "/" + quantity;
+			count.innerHTML = slideIndex + " / " + quantity;
 			combineBoth();
 		};
 
@@ -193,7 +196,7 @@
 
 
 
-//move you to first image of clicked category
+//moves you to first image of clicked category
 
 		const rochdale = document.getElementById("roch");
 		rochdale.addEventListener("click", function(){
