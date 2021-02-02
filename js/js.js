@@ -147,5 +147,60 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 
 
-});
+//inserts correct info into info box
 
+	const infoArr = [
+		{index: 1, title: "View from a Window", medium: "Oil pastel on paper", size: "29 x 22 inches"}, 
+		{index: 2, title: "View from a Window 2", medium:"Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 3, title: "View From a Window 3", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 4, title: "Crossing", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 5, title: "Crossing 2", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 6, title: "Traffic", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 7, title: "Narrow Street", medium:"Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 8, title: "St Mary's Way", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 9, title: "Crowd", medium: "Charcoal on paper", size: "29 x 22 inches"},
+		{index: 10, title: "Steps", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 11, title: "Unreal City", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 12, title: "Homeward Bound", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 13, title: "Figures in a Landscape", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 14, title: "Figures in a Landscape 2", medium: "Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 15, title: "Red City", medium: "Oil on paper", size: "29 x 22 inches"},
+		{index: 16, title: "Rush Hour", medium: "Oil paint on paper", size: "29 x 22 inches"},
+		{index: 17, title: "Pink Underpass", medium: "Oil on paper", size: "29 x 22 inches"},
+		{index: 18, title: "Red Bridge", medium: "Oil paint on paper", size: "29 x 22 inches"},
+		{index: 19, title: "White Bridge", medium: "Oil paint on paper", size: "29 x 22 inches"},
+		{index: 20, title: "5.15", medium: "Oil paint, oil pastel on paper", size: "29 x 22 inches"},
+	
+		{index: 21, title: "Armchair for a Tired Businessman", medium: "Oil on canvas", size: "76 x 60 inches"},
+		{index: 22, title: "Fried Chicken and Coca Cola", medium: "Oil on canvas", size: "76 x 60 inches"},
+		{index: 23, title: "Notes Towards the Definition of Culture", medium: "Oil on canvas", size: "82 x 65 inches"},
+		{index: 24, title: "Being and Time", medium: "Oil on canvas", size: "76 x 60 inches"},
+		{index: 25, title: "The Secret Life of Objects" , medium: "Installation shot", size:""},
+		{index: 26, title: "Nocturne", medium: "Oil on canvas", size: "78 x 60 inches"},
+		{index: 27, title: "Objects in a Landscape", medium: "Oil on canvas", size: "76 x 60 inches"},
+		{index: 28, title: "Stocks and Shares", medium: "Oil on canvas", size: "80 x 60 inches"},
+		{index: 29, title: "Still Life", medium: "Oil on canvas", size: "60 x 48 inches"},
+		{index: 30, title: "Commodities", medium: "Oil on canvas", size: "66 x 63 inches"},	
+		{index: 31, title: "The Herald", medium: "Oil on canvas", size: "60 x 48 inches"},
+		{index: 32, title: "Figure Reading a Newspaper", medium: "Acrylic on paper", size: "36 x 24 inches"},
+		{index: 33, title: "Towards Evening", medium: "Oil on canvas", size: "60 x 48 inches"},
+		{index: 34, title: "Man at Work", medium: "Oil on canvas", size: "48 x 36 inches"},
+		{index: 35, title: "Working Late", medium: "Oil on canvas", size: "60 x 48 inches"},
+		{index: 36, title: "Vitamins and Minerals", medium: "Oil on canvas", size: "40 x 40 inches"},
+		{index: 37, title: "A Quiet Afternoon", medium: "Oil on canvas", size: "60 x 48 inches"},
+		{index: 38, title: "After Hours", medium: "Oil on canvas", size: "70 x 74 inches"},
+		{index: 39, title: "Market Forces", medium: "Acrylic on paper", size: "36 x 24 inches"},
+		{index: 40, title: "Babylon", medium: "Acrylic on paper", size: "36 x 24 inches"},
+		
+		{index: , title: , medium: , size: },
+		{index: , title: , medium: , size: },
+		{index: , title: , medium: , size: },
+		{index: , title: , medium: , size: },
+		{index: , title: , medium: , size: },
+		{index: , title: , medium: , size: },
+	];
+
+
+
+
+)};
