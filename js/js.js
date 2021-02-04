@@ -2,153 +2,6 @@ document.addEventListener("DOMContentLoaded", function(){
 
 	var slideIndex = 1;
 
-
-//displays the correct slide
-	function showPic(n){
-
-		images = document.getElementsByClassName("pic");
-
-		if (n > images.length){
-			slideIndex = 1;
-		}
-		if (n < 1){
-			slideIndex = images.length;
-		}
-		for (var i = 0; i < images.length; i++){
-			images[i].style.display = "none";
-		}
-		images[slideIndex - 1].style.display = "block";
-		images[slideIndex - 1].style.width = "350px";
-		images[slideIndex -1].style.height = "auto";
-			
-	}
-		
-
-	showPic(slideIndex);
-
-
-//displays how far through carousel
-
-	const counter = document.getElementById("count");
-	var quantity = document.getElementsByClassName("pic").length;
-
-	function newCount(){
-		count.innerHTML = slideIndex + " / " + quantity;
-		combineBoth();
-	};
-
-
-//moves you to first image of clicked category
-
-	const city = document.getElementById("city");
-	city.addEventListener("click", function(){
-		slideIndex = 1;
-		showPic(slideIndex);
-		newCount();
-	});
-
-	const interiors = document.getElementById("interiors");
-	interiors.addEventListener("click", function(){
-		slideIndex = 21;
-		showPic(slideIndex);
-		newCount();
-	});
-
-	const narrative = document.getElementById("narrative");
-	narrative.addEventListener("click", function(){
-		slideIndex = 41;
-		showPic(slideIndex);
-		newCount();
-	});
-
-	const landscapes = document.getElementById("landscapes");
-	landscapes.addEventListener("click", function(){
-		slideIndex = 64;
-		showPic(slideIndex);
-		newCount();
-	});
-
-	const misc = document.getElementById("misc");
-	misc.addEventListener("click", function(){
-		slideIndex = 86;
-		showPic(slideIndex);
-		newCount();
-	});
-
-
-//highlights correct category
-
-	var items = [
-   	 	{
-			name: city, 
-   			index: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
-		}, 
-    		{
-			name: interiors, 
-    			index: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
-		}, 
-    		{
-			name: narrative,
-    			index: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
-		}, 
-    		{	
-			name: landscapes, 
-    			index: [64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85]
-		}, 
-    		{	
-			name: misc, 
-    			index: [86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
-		} 
-	];
-
-
-	function allBlack(){
-   		for (var t = 0; t < items.length; t++){
-       			items[t].name.style.color = "black";
-    		}
-	};
-
-	function highlight(){
-   		for (var j = 0; j < items.length; j++){
-        		if (items[j].index.includes(slideIndex)){
-           			 items[j].name.style.color = "#F08C52";  
-       	 		}
-    		}
-	};
-
-	function combineBoth(){
-		allBlack();
-		highlight();
-	};
-
-
-//move you back or forth  when directional arrows are clicked
-
-	function plus(){	
-		showPic(slideIndex += 1);
-		newCount();
-	};
-
-	function minus(){
-		showPic(slideIndex -= 1);
-		newCount();
-	}
-	
-	const prev = document.getElementById("prev");
-	prev.addEventListener("click", function(){
-		minus();
-		combineBoth();
-	});
-
-	const next = document.getElementById("next");
-	next.addEventListener("click", function(){
-		plus();
-		combineBoth();
-	});
-
-
-//inserts correct info into info box
-
 	const infoArr = [
 		{index: 1, title: "View from a Window", medium: "Oil pastel on paper", size: "29 x 22 inches"}, 
 		{index: 2, title: "View from a Window 2", medium:"Oil pastel on paper", size: "29 x 22 inches"},
@@ -156,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function(){
 		{index: 4, title: "Crossing", medium: "Oil pastel on paper", size: "29 x 22 inches"},
 		{index: 5, title: "Crossing 2", medium: "Oil pastel on paper", size: "29 x 22 inches"},
 		{index: 6, title: "Traffic", medium: "Oil pastel on paper", size: "29 x 22 inches"},
-		{index: 7, title: "Narrow Street", medium:"Oil pastel on paper", size: "29 x 22 inches"},
+		{index: 7, title: "Narrow Street", medium: "Oil pastel on paper", size: "29 x 22 inches"},
 		{index: 8, title: "St Mary's Way", medium: "Oil pastel on paper", size: "29 x 22 inches"},
 		{index: 9, title: "Crowd", medium: "Charcoal on paper", size: "29 x 22 inches"},
 		{index: 10, title: "Steps", medium: "Oil pastel on paper", size: "29 x 22 inches"},
@@ -249,8 +102,6 @@ document.addEventListener("DOMContentLoaded", function(){
 		{index: 93, title: "We Stood Alone", medium: "Acrylic on paper", size: "29 x 22 inches"},
 		{index: 94, title: "On the Beach", medium: "Acrylic on paper", size: "29 x 22 inches"},
 		{index: 95, title: "Carriage Clock", medium: "Oil, acrylic, pigment on canvas", size: "24 x 20 inches"},
-
-
 		{index: 96, title: "Manoeuvers", medium: "Acrylic on paper", size: "29 x 22 inches"},
 		{index: 97, title: "Milk Cartons", medium: "Ink on paper", size: "10 x 8 inches"},
 		{index: 98, title: "Studies for a Milk Carton", medium: "Ink and collage on sketchbook pages", size: "10 x 16 inches"},
@@ -268,6 +119,173 @@ document.addEventListener("DOMContentLoaded", function(){
 	];
 
 
+//displays the correct slide
+	function showPic(n){
+
+		images = document.getElementsByClassName("pic");
+
+		if (n > images.length){
+			slideIndex = 1;
+		}
+		if (n < 1){
+			slideIndex = images.length;
+		}
+		for (var i = 0; i < images.length; i++){
+			images[i].style.display = "none";
+		}
+		images[slideIndex - 1].style.display = "block";
+		images[slideIndex - 1].style.width = "350px";
+		images[slideIndex -1].style.height = "auto";
+			
+	}
+		
+
+	showPic(slideIndex);
+
+//displays how far through carousel
+
+	const counter = document.getElementById("count");
+	var quantity = document.getElementsByClassName("pic").length;
+
+	function newCount(){
+		count.innerHTML = slideIndex + " / " + quantity;
+		combineBoth();
+	};
 
 
-)};
+//moves you to first image of clicked category
+
+	const city = document.getElementById("city");
+	city.addEventListener("click", function(){
+		slideIndex = 1;
+		showPic(slideIndex);
+		newCount();
+		info();
+	});
+
+	const interiors = document.getElementById("interiors");
+	interiors.addEventListener("click", function(){
+		slideIndex = 21;
+		showPic(slideIndex);
+		newCount();
+		info();
+	});
+
+	const narrative = document.getElementById("narrative");
+	narrative.addEventListener("click", function(){
+		slideIndex = 41;
+		showPic(slideIndex);
+		newCount();
+		info();
+	});
+
+	const landscapes = document.getElementById("landscapes");
+	landscapes.addEventListener("click", function(){
+		slideIndex = 64;
+		showPic(slideIndex);
+		newCount();
+		info();
+	});
+
+	const misc = document.getElementById("misc");
+	misc.addEventListener("click", function(){
+		slideIndex = 86;
+		showPic(slideIndex);
+		newCount();
+		info();
+	});
+
+
+//highlights correct category
+
+	var items = [
+   	 	{
+			name: city, 
+   			index: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+		}, 
+    		{
+			name: interiors, 
+    			index: [21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40]
+		}, 
+    		{
+			name: narrative,
+    			index: [41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63]
+		}, 
+    		{	
+			name: landscapes, 
+    			index: [64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85]
+		}, 
+    		{	
+			name: misc, 
+    			index: [86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108]
+		} 
+	];
+
+
+	function allBlack(){
+   		for (var t = 0; t < items.length; t++){
+       			items[t].name.style.color = "black";
+    		}
+	};
+
+	function highlight(){
+   		for (var j = 0; j < items.length; j++){
+        		if (items[j].index.includes(slideIndex)){
+           			 items[j].name.style.color = "#F08C52";  
+       	 		}
+    		}
+	};
+
+	function combineBoth(){
+		allBlack();
+		highlight();
+	};
+
+
+//inserts info into info boxes
+	
+	const infoTitle = document.getElementById("pic_title");
+	const infoMedia = document.getElementById("pic_material");
+	const infoSize = document.getElementById("pic_size");
+
+	function info(){
+		for (var x = 0; x < infoArr.length; x++){
+			if (infoArr[x].index == slideIndex){
+				infoTitle.innerHTML = infoArr[x].title;
+				infoMedia.innerHTML = infoArr[x].medium;
+				infoSize.innerHTML = infoArr[x].size;
+			}
+		}
+	};
+
+//move you back or forth  when directional arrows are clicked
+
+	function plus(){	
+		showPic(slideIndex += 1);
+		newCount();
+	};
+
+	function minus(){
+		showPic(slideIndex -= 1);
+		newCount();
+	}
+	
+	const prev = document.getElementById("prev");
+	prev.addEventListener("click", function(){
+		minus();
+		combineBoth();
+		info();
+	});
+
+	const next = document.getElementById("next");
+	next.addEventListener("click", function(){
+		plus();
+		combineBoth();
+		info();
+	});
+
+
+//inserts correct info into info box
+
+
+});

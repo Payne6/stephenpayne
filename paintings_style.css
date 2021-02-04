@@ -96,6 +96,10 @@ a:hover {
 	margin-top: 15px;
 }
 
+#city { 
+	color: #F08C52;
+}
+
 #cv_container {
 	display: flex;
 	flex-direction: column;
@@ -187,7 +191,8 @@ a:hover {
 	flex-direction: row;
 	justify-content: center;
 	width: 90%;
-	margin-top: 20px; 
+	margin-top: 20px;
+        margin-left: auto;
 }
 
 #categories_list {
@@ -252,6 +257,7 @@ a:hover {
 }
 
 #pic_info_box {
+	width: 30%;
 	margin-left: 20px;
 	font-family: 'Alegreya Sans', sans-serif;
 }
