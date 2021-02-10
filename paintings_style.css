@@ -206,6 +206,7 @@ a:hover {
 .cat {
 	margin-bottom: 15px;
 	font-weight: bold;
+	cursor: pointer;
 }
 
 #carousel_images {
@@ -228,6 +229,7 @@ a:hover {
 	margin-top: 50px;
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 15px;
+	cursor: pointer;
 }
 
 #back {
