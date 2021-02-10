@@ -1,24 +1,11 @@
-
-
-#image_box {		
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-}
-
-.image {
-	display: flex;
-	width: 30%;
-	height: auto;
-	margin-bottom: 10px;
-}
+/*Top banner*/
 
 #top {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	font-family: 'Alegreya Sans', sans-serif;
+	margin-bottom: 30px;
 }
 
 #header {
@@ -27,7 +14,7 @@
 	justify-content: center;
 	width: 60%;
 	margin-top: -30px;
-	margin-bottom: -50px;
+	margin-bottom: -40px;
 }
 
 #header_name {	
@@ -42,18 +29,6 @@
 	width: 45%;
 	font-size: 20px;
 	font-weight: bold;
-}
-
-#main_image_container {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-top: 20px;
-}
-
-#main_image {
-	width: 50%;
-	height: auto;
 }
 
 a:link {
@@ -71,34 +46,26 @@ a:hover {
 	color: #F08C52;
 }
 
-#thumb_box {
+
+
+/*Main page image*/
+
+#main_image_container {
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	flex-wrap: wrap;
-	margin-top: 30px;
-}
-		
-.pic_link {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	margin-right: 10px;	
-	border-style: solid;
-}
-		
-.jpeg {
-	display: flex;
-	max-height: 200px;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
 }
 
-#image_box {
-	margin-top: 15px;
+#main_image {
+	width: 50%;
+	height: auto;
 }
 
-#city { 
-	color: #F08C52;
-}
+
+
+
+/*CV page*/
 
 #cv_container {
 	display: flex;
@@ -142,6 +109,10 @@ a:hover {
 	margin-left: 20px;
 }
 
+
+
+/*Contact page*/
+
 .contacts_body {
 	display: flex;
 	flex-direction: column;
@@ -165,6 +136,10 @@ a:hover {
 	margin-left: 20px;
 }
 
+
+
+/*About page*/
+
 #about_container {
 	display: flex;
 	flex-direction: column;
@@ -179,6 +154,11 @@ a:hover {
 	width: 70%;
 	margin-top: 30px;
 }
+
+
+
+
+/*Carousel page*/
 
 #carousel_body {
 	display: flex;
@@ -209,6 +189,10 @@ a:hover {
 	cursor: pointer;
 }
 
+#city { 
+	color: #F08C52;
+}
+
 #carousel_images {
 	display: flex;
 	flex-direction: row;
@@ -230,14 +214,6 @@ a:hover {
 	font-family: 'Alegreya Sans', sans-serif;
 	font-size: 15px;
 	cursor: pointer;
-}
-
-#back {
-	
-}
-
-#forward {
-	
 }
 
 #count {
