@@ -1,5 +1,8 @@
 /*Top banner*/
 
+
+
+
 #top {
 	display: flex;
 	flex-direction: column;
@@ -47,11 +50,29 @@ a:hover {
 }
 
 
+@media only screen and (max-width: 600px){
+	#top {
+		align-items: center;
+	}
+
+	#header {
+		width: 90%;
+		justify-content: space-around;
+	}
+
+	#header_name {
+		font-size: 50px;
+	}
+
+	#menu {
+		width: 90%;
+		justify-content: space-between;
+	        margin-top: 20px;	
+	}
+}
 
 
-
-
-/*Main page image*/
+/*Main page*/
 
 #main_image_container {
 	display: flex;
@@ -64,6 +85,8 @@ a:hover {
 	width: 50%;
 	height: auto;
 }
+
+
 
 
 
@@ -112,7 +135,31 @@ a:hover {
 	margin-left: 20px;
 }
 
+@media only screen and (max-width: 600px) {
+	#cv_container {
+		align-items: flex-start;
+		width: 100%;
+	}
 
+	#cv_body {
+		width: 100%;
+	}
+	
+	.entry {
+		width: 100%;
+		align-items: flex-start;
+	}
+
+	.cv_date {
+		width: 15%;
+	}
+
+	.cv_content_box {
+		align-items: flex-start;
+		max-width: 70%;
+	}
+
+}
 
 /*Contact page*/
 
@@ -139,7 +186,12 @@ a:hover {
 	margin-left: 20px;
 }
 
-
+@media only screen and (max-width: 600px) {
+	.details {
+		width: 90%;
+		justify-content: flex-start;
+	}
+}
 
 /*About page*/
 
@@ -159,7 +211,12 @@ a:hover {
 }
 
 
-
+@media only screen and (max-width: 600px) {
+	#about_content {
+		width: 90%;
+		margin-top: 0px;
+	}
+}
 
 /*Carousel page*/
 
