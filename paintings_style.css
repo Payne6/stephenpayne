@@ -169,6 +169,7 @@ a:hover {
 	align-items: center;
 	margin-top: 40px;
 	font-family: 'Alegreya Sans', sans-serif;
+	font-size: 20px;
 }
 
 .details {
@@ -215,6 +216,7 @@ a:hover {
 	#about_content {
 		width: 90%;
 		margin-top: 0px;
+		font-size: 20px;
 	}
 }
 
