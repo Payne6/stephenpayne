@@ -306,3 +306,26 @@ a:hover {
 	font-weight: bold;
 }
 
+@media only screen and (max-width: 600px) {
+	#main_carousel_div {
+		flex-direction: column;
+		margin-top: -10px;
+	}
+
+	.cat {
+		display: none;
+	}
+
+	#categories_list {
+		width: 100%;
+	}
+
+	#chevrons {
+		width: 80%;
+	}
+
+	#pic_info_box {
+		width: 100%;
+	} 
+}
+
