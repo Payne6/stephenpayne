@@ -310,6 +310,7 @@ a:hover {
 	#main_carousel_div {
 		flex-direction: column;
 		margin-top: -10px;
+		align-items: center;
 	}
 
 	.cat {
@@ -322,7 +323,12 @@ a:hover {
 	}
 
 	#chevrons {
-		width: 90%;
+		width: 80%;
+	}
+
+	#carousel_images {
+		justify-content: center;
+		max-width: 100%;
 	}
 
 	#pic_info_box {
