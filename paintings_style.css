@@ -318,10 +318,11 @@ a:hover {
 
 	#categories_list {
 		width: 100%;
+		align-items: center;
 	}
 
 	#chevrons {
-		width: 100%;
+		width: 90%;
 	}
 
 	#pic_info_box {
