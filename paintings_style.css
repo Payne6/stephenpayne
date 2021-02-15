@@ -324,8 +324,8 @@ a:hover {
 	}
 
 	#chevrons {
-		width: 90%;
-		justify-content: space-between;
+		width: 70%;
+		justify-content: space-around;
 		margin-bottom: 10px;
 	}
 	
