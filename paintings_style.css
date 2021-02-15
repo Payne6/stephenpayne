@@ -318,12 +318,19 @@ a:hover {
 	}
 
 	#categories_list {
+		margin-top: -20px;
 		width: 100%;
 		align-items: center;
 	}
 
 	#chevrons {
-		width: 80%;
+		width: 90%;
+		justify-content: space-between;
+		margin-bottom: 10px;
+	}
+	
+	.direction {
+		display: none;
 	}
 
 	#carousel_images {
